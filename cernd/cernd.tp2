@@ -12,7 +12,7 @@ ALWAYS
 
 	/* Converts tra files to UTF-8 */
 	// No exception, everything needs to be converted
-	ACTION_DEFINE_ARRAY cerndnoconvert BEGIN END
+	ACTION_DEFINE_ARRAY cerndnoconvert BEGIN install END
 
 	// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
 	ACTION_DEFINE_ARRAY cerndreload BEGIN cernd END
@@ -36,6 +36,10 @@ LANGUAGE ~English~
 LANGUAGE ~Russian by shaker653 from arcanecoast.ru~
          ~russian~
          ~cernd/translations/russian/cernd.tra~
+
+LANGUAGE ~Simplified Chinese by Merzbau~
+         ~schinese~
+         ~cernd/translations/schinese/install.tra~
 
 /* =================================== *
  *    Cernd Friendship for BG2: ToB    *
